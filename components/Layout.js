@@ -8,7 +8,7 @@ const Layout = ({ children, pageTitle, ...props }) => (
       <title>{pageTitle}</title>
     </Head>
     <Nav />
-    <div className='content bg-gray-800'>
+    <div className='content bg-gray-800 relative z-0'>
       {children}
     </div>
   </>
