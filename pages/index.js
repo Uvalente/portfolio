@@ -1,9 +1,11 @@
-import Head from 'next/head'
+import Layout from '../components/Layout'
 
-export default function Home() {
-  return (
-    <div className='text-green-700 text-4xl'>
+const Index = () => (
+  <Layout pageTitle='uValente Index'>
+    <p className='text-green-700 text-4xl'>
       Hello world!
-    </div>
-  )
-}
+    </p>
+  </Layout>
+)
+
+export default Index
