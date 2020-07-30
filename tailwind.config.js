@@ -41,7 +41,10 @@ module.exports = {
       colors: {
         'regal-blue': '#243c5a',
         'dark-blue': '#2D3748'
-      }
+      },
+      screens: {
+        'xxl': '2450px' 
+      },
     },
   },
   variants: {},

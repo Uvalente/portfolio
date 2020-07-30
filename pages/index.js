@@ -16,6 +16,7 @@ const Index = () => (
         {lorem}
       </div>
     </div>
+    <div className='relative z-0 -mt-32 h-64 bg-dark-blue -skew-y-6 transform xxl:-skew-y-3'></div>
   </Layout>
 )
 
