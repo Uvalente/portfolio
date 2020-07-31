@@ -37,7 +37,14 @@ module.exports = {
         '10xl': '8rem',
         '11xl': '9rem',
         '12xl': '10rem'
-      }
+      },
+      colors: {
+        'regal-blue': '#243c5a',
+        'dark-blue': '#2D3748'
+      },
+      screens: {
+        'xxl': '2450px' 
+      },
     },
   },
   variants: {},

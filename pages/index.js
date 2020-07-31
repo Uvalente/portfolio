@@ -1,11 +1,11 @@
 import Layout from '../components/Layout'
+import HeroImage from '../components/HeroImage'
+import Main from '../components/Main'
 
 const Index = () => (
   <Layout pageTitle='uValente Index'>
-    <p className='pt-16 text-green-700 text-4xl'>
-      Hello world!
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </p>
+    <HeroImage imgSrc='/medium-test.jpg' />
+    <Main />
   </Layout>
 )
 
