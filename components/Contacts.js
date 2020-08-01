@@ -6,18 +6,17 @@ h
     <form name="contact" method="POST" data-netlify="true" className='w-full lg:w-1/3 px-4'>
       <div className='border relative rounded'>
         <label for='name' className='absolute -mt-3 ml-1 px-1 bg-white uppercase text-xs tracking-wide text-gray-600'>Name</label>
-        <input type="text" name="name" id='name' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' />
+        <input type="text" name="name" id='name' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' required />
       </div>
-      {/* h-full? */}
 
       <div className='border relative rounded mt-6'>
         <label for='email' className='absolute -mt-3 ml-1 px-1 bg-white uppercase text-xs tracking-wide text-gray-600'>Email</label>
-        <input type="email" name="email" id='email' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' />
+        <input type="email" name="email" id='email' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' required />
       </div>
 
       <div className='border relative rounded mt-6'>
         <label for='message' className='absolute -mt-3 ml-1 px-1 bg-white uppercase text-xs tracking-wide text-gray-600'>Message</label>
-        <textarea name="message" id='message' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded'/>
+        <textarea name="message" id='message' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' required />
       </div>
 
       
