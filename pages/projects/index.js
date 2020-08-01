@@ -3,14 +3,12 @@ import Project from '../../components/Project'
 import matter from 'gray-matter'
 import Link from 'next/link'
 
-const description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-
 const Projects = ({ projects, ...props }) => {
   const projectsList = projects.map((project) => {
     return (
       <Link href='/projects/[projectName]' as={`/projects/${project.slug}`} key={project.slug} >
         <a className='my-8'>
-          <Project title={project.data.title} description={project.data.description} stack='ruby javascript' imgSrc='/stock-mock.PNG' />
+          <Project title={project.data.title} description={project.data.description} stack={project.data.tech} imgSrc={project.data.imgSrc} />
         </a>
       </Link>
     )
@@ -19,7 +17,7 @@ const Projects = ({ projects, ...props }) => {
 
   return (
     <Layout pageTitle='uValente Projects'>
-      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-24'>
+      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-2 md:px-8 lg:px-40'>
         <h1 className='text-center text-4xl font-mono font-semibold tr tracking-wide'>Projects</h1>
         <div className='flex flex-wrap justify-around mt-6'>
           {projectsList}
