@@ -7,10 +7,9 @@ const description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. V
 
 const Projects = ({ projects, ...props }) => {
   const projectsList = projects.map((project) => {
-    console.log(project)
     return (
       <Link href='/projects/[projectName]' as={`/projects/${project.slug}`} key={project.slug} >
-        <a>
+        <a className='my-8'>
           <Project title={project.data.title} description={project.data.description} stack='ruby javascript' imgSrc='/stock-mock.PNG' />
         </a>
       </Link>
@@ -20,8 +19,11 @@ const Projects = ({ projects, ...props }) => {
 
   return (
     <Layout pageTitle='uValente Projects'>
-      <div className='bg-dark-blue font-mono text-gray-100 pb-20'>
-        {projectsList}
+      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-24'>
+        <h1 className='text-center text-4xl font-mono font-semibold tr tracking-wide'>Projects</h1>
+        <div className='flex flex-wrap justify-around mt-6'>
+          {projectsList}
+        </div>
       </div>
     </Layout>
   )
