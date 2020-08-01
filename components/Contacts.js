@@ -16,6 +16,7 @@ const Contacts = () => (
         </div>
       </div>
       <form name="contact" method="POST" data-netlify="true" className='w-full lg:w-1/3 px-4'>
+        <input type="hidden" name="form-name" value="contact" />
         <div className='border relative rounded'>
           <label htmlFor='name' className='absolute -mt-3 ml-1 px-1 bg-white uppercase text-xs tracking-wide text-gray-600'>Name</label>
           <input type="text" name="name" id='name' className='py-2 px-2 text-gray-900 w-full focus:outline-none focus:shadow-outline rounded' required />
