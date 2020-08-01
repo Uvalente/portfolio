@@ -2,7 +2,7 @@ const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitu
 
 const Main = () => (
   <>
-    <div className='relative z-10 flex flex-col items-center lg:flex-row justify-center bg-dark-blue text-gray-100 pt-32' >
+    <div className='relative z-10 flex flex-col items-center lg:flex-row justify-center bg-dark-blue text-gray-100 pt-32 font-mono' >
       <div className='lg:w-1/2 xl:w-1/3'>
         <img className='h-64 w-64 rounded-full object-cover object-top overflow-hidden lg:h-auto lg:w-full lg:rounded-none' src='/umberto.jpg' />
       </div>
