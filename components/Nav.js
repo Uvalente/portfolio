@@ -25,7 +25,7 @@ const Nav = () => {
   }, [isScrolled])
 
   return (
-    <nav className={`fixed w-full z-50 ${isScrolled && 'bg-dark-blue shadow-lg'} text-gray-100 bg-opacity-75 md:flex md:items-center md:justify-between transition-all duration-300`}>
+    <nav className={`fixed w-full z-50 bg-dark-blue shadow-lg ${isScrolled ? 'md:bg-dark-blue md:shadow-lg' : 'md:bg-transparent md:shadow-none'} text-gray-100 bg-opacity-75 md:bg-opacity-75 md:flex md:items-center md:justify-between transition-all duration-300`}>
       <div className='w-full flex justify-between items-center px-4 md:pl-16 md:pr-0 md:w-auto'>
         <Link href='/'>
           <a>
