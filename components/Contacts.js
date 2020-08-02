@@ -1,6 +1,6 @@
 const Contacts = () => (
   <>
-    <h3 className='mt-32 lg:mt-40 text-center text-4xl font-mono font-semibold tr tracking-wide'>Get in touch!</h3>
+    <h3 className='mt-32 lg:mt-40 text-center text-4xl font-mono font-semibold tr tracking-wide' id='contacts'>Get in touch!</h3>
     <div className='mt-16 lg:mt-20 flex justify-center flex-col lg:flex-row'>
       <div className='w-full lg:w-1/3 flex justify-center mb-24 lg:flex-col items-center lg:pr-20 lg:mb-0'>
         <a href='https://www.linkedin.com/in/umberto-valente/' target='_blank'>
