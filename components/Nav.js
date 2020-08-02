@@ -17,10 +17,22 @@ const Nav = () => {
       }
     }
 
-    document.addEventListener('scroll', handleScroll)
+    let eventTimeout
+
+    const eventThrottler = () => {
+      console.log(eventTimeout)
+      if ( !eventTimeout ) {
+        eventTimeout = setTimeout(function() {
+          eventTimeout = null
+          handleScroll()
+         }, 100)
+      }
+    }
+
+    document.addEventListener('scroll', eventThrottler)
 
     return () => {
-      document.removeEventListener('scroll', handleScroll)
+      document.removeEventListener('scroll', eventThrottler)
     }
   }, [isScrolled])
 
