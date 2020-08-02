@@ -7,6 +7,7 @@ gitHub: 'https://github.com/Uvalente/finance'
 url: 'https://stock-mocks.herokuapp.com/'
 ---
 
+Flask application created to mock buying and selling stock’s shares, building a dummy portfolio.<br>
 If you are interested in stocks trading but scared of losing all your savings, this is your lucky day!<br>
 Start fake buying and fake selling shares of your favorite company and become a fake millionaire!
 <br><br>
