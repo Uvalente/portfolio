@@ -11,7 +11,7 @@ const Project = ({ data, body, ...props }) => {
       <div className='bg-dark-blue font-mono text-gray-100 py-24 px-10 lg:px-64'>
         <h1 className='text-center text-4xl font-mono font-semibold tr tracking-wide'>{data.title}</h1>
         <div className='mt-12'>
-          {body}
+          <ReactMarkdown escapeHtml={false} source={body} />
         </div>
         <div>
           <Link href='/projects'>
