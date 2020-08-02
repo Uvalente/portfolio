@@ -17,7 +17,7 @@ const Projects = ({ projects, ...props }) => {
 
   return (
     <Layout pageTitle='uValente Projects'>
-      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-2 md:px-8 lg:px-40'>
+      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-2 md:px-8 lg:px-40' id='top'>
         <h1 className='text-center text-4xl font-mono font-semibold tr tracking-wide'>Projects</h1>
         <div className='flex flex-wrap justify-around mt-6'>
           {projectsList}
