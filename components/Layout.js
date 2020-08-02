@@ -11,6 +11,11 @@ const Layout = ({ children, pageTitle, ...props }) => (
     <Nav />
     {children}
     <Footer />
+    <style jsx global>{`
+      html {
+        scroll-behavior: smooth;
+      }
+    `}</style>
   </>
 )
 
