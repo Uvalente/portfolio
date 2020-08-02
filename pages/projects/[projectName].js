@@ -8,7 +8,7 @@ const Project = ({ data, body, ...props }) => {
 
   return (
     <Layout pageTitle='uValente Projects NAME'>
-      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-10 lg:px-64'>
+      <div className='bg-dark-blue font-mono text-gray-100 py-24 px-10 lg:px-64' id='top'>
         <h1 className='text-center text-4xl font-mono font-semibold tr tracking-wide'>{data.title}</h1>
         <div className='mt-12'>
           <ReactMarkdown escapeHtml={false} source={body} />
