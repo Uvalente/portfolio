@@ -13,5 +13,3 @@ Start fake buying and fake selling shares of your favorite company and become a 
 This is a Flask web application developed with a TDD approach using pytest.<br>
 I employed the Application Factory pattern to facilitate testing, and Blueprint to organize the app and separate concerns.<br>
 Bootstrap is being used to style the app and achieve a responsive design.
-<br><br>
-The live version can be found at: Stock Mocks
