@@ -1,16 +1,32 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Nav = () => {
   const [isClose, setIsClose] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   const handleClick = () => {
     setIsClose(!isClose)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scroll = window.scrollY > 250
+      if (isScrolled !== scroll) {
+        setIsScrolled(scroll)
+      }
+    }
+
+    document.addEventListener('scroll', handleScroll)
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [isScrolled])
+
   return (
-    <nav className='fixed w-full z-50 bg-dark-blue text-gray-100 bg-opacity-75 md:flex md:items-center md:justify-between'>
-      <div className='w-full flex justify-between items-center px-4 md:pl-16 md:pr-0 md:w-auto '>
+    <nav className={`fixed w-full z-50 ${isScrolled && 'bg-dark-blue shadow-lg'} text-gray-100 bg-opacity-75 md:flex md:items-center md:justify-between transition-all duration-300`}>
+      <div className='w-full flex justify-between items-center px-4 md:pl-16 md:pr-0 md:w-auto'>
         <Link href='/'>
           <a>
             <p className='font-mono text-5xl'>uValente</p>
