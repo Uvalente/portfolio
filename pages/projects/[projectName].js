@@ -7,7 +7,7 @@ const Project = ({ data, body, ...props }) => {
   if (!data) return <></>
 
   return (
-    <Layout pageTitle='uValente Projects NAME'>
+    <Layout pageTitle={'~/uValente/Projects/' + data.title}>
       <div className='relative z-0'>
         <div className='relative h-24 bg-dark-blue' />
         <div className='relative h-64 -mt-40 mt- bg-dark-blue -skew-y-6 transform xxl:-skew-y-3' />

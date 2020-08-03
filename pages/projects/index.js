@@ -16,7 +16,7 @@ const Projects = ({ projects, ...props }) => {
 
 
   return (
-    <Layout pageTitle='uValente Projects'>
+    <Layout pageTitle='~/uValente/Projects'>
       <div className='relative z-0'>
         <div className='relative h-24 bg-dark-blue' />
         <div className='relative h-64 -mt-40 mt- bg-dark-blue -skew-y-6 transform xxl:-skew-y-3' />
