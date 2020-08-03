@@ -1,10 +1,10 @@
 const Main = () => (
   <>
     <div className='relative z-10 flex flex-col items-center lg:flex-row justify-center bg-dark-blue text-gray-100 pt-32 font-mono' id='top'>
-      <div className='lg:w-1/2 xl:w-1/3'>
+      <div className='lg:w-1/3 xl:w-28p xxl:w-1/4'>
         <img className='h-64 w-64 rounded-full object-cover object-top overflow-hidden lg:h-auto lg:w-full lg:rounded-none' src='/umberto.jpg' />
       </div>
-      <div className='pt-16 px-8 lg:w-1/2 xl:w-1/3 space-y-6 text-lg md:space-y-4 tracking-wide'>
+      <div className='pt-16 px-8 lg:w-1/2 xxl:w-1/3 space-y-6 text-lg md:space-y-4 tracking-wide'>
         <p>After many years surrounded by hobs and pots, I've hung up my knives and dust off my childhood dream.</p>
         <p>
           Equipped with the same drive and perseverance that allowed me to rise and shine in the culinary world, I embarked on countless hours of self-study and self-improvement.
