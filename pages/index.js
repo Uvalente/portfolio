@@ -5,7 +5,7 @@ import Contacts from '../components/Contacts'
 
 const Index = () => (
   <Layout pageTitle='uValente Index'>
-    <HeroImage imgSrc='/medium-test.jpg' />
+    <HeroImage imgSrc='/keyboard.jpg' />
     <Main />
     <Contacts />
   </Layout>
