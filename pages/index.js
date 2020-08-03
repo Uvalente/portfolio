@@ -4,8 +4,8 @@ import Main from '../components/Main'
 import Contacts from '../components/Contacts'
 
 const Index = () => (
-  <Layout pageTitle='uValente Index'>
-    <HeroImage imgSrc='/medium-test.jpg' />
+  <Layout pageTitle='~/uValente/Home'>
+    <HeroImage imgSrc='/keyboard.jpg' />
     <Main />
     <Contacts />
   </Layout>
