@@ -6,7 +6,7 @@ const Footer = () => (
       </a>
       <div className='bg-dark-blue text-sm px-4 md:px-16 lg:px-32 mt-8 flex flex-col space-y-1'>
         <p>
-          Icons by <a href='https://fontawesome.com/license/free' target='_blank'>Font Awesome</a> && <a href='https://github.com/tailwindlabs/heroicons' target='_blank'>Heroicons</a>
+          Icons by <a href='https://fontawesome.com/license/free' target='_blank' rel="noreferrer" >Font Awesome</a> && <a href='https://github.com/tailwindlabs/heroicons' target='_blank' rel="noreferrer" >Heroicons</a>
         </p>
         <p>
           Hero Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a href="https://unsplash.com/">Unsplash</a>
