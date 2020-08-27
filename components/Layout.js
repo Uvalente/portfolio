@@ -6,6 +6,7 @@ const Layout = ({ children, pageTitle, ...props }) => (
   <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Umberto Valente is a full stack software developer, specialized in Python, JavaScript and Ruby development."></meta>
       <meta property="og:title" content="~/uValente/Portfolio" />
       <meta property="og:description" content="My personal portfolio, click me and have a look at my latest projects" />
       <meta property="og:type" content="website" />
