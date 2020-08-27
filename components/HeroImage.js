@@ -1,6 +1,6 @@
 const HeroImage = ({ imgSrc, ...props }) => (
   <div className='relative w-full h-screen bg-gray-800 font-mono text-gray-100'>
-    <img src={imgSrc} className='relative w-full h-full object-cover object-top opacity-75 z-0' />
+    <img src={imgSrc} className='relative w-full h-full object-cover object-top opacity-75 z-0' alt=""/>
     <div className='absolute top-0 z-10 w-full h-full flex justify-center items-center flex-col divide-y-2 divide-opacity-50 divide-blue-500'>
       <h1 className='font-semibold text-4xl md:text-7xl'>
         Umberto Valente
